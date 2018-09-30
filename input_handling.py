@@ -24,7 +24,7 @@ def get_num_players():
 
 def next_player(player):
 	i = 3
-	print("")
+	print()
 	while i > 0:
 		print("{}'s turn in {}".format(player.name, i))
 		i -= 1
