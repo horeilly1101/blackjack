@@ -1,6 +1,6 @@
 from player import Player
 from deck import Deck
-from input_handling import match_yes
+from input_handling import match_yes, next_player, press_return
 
 class Blackjack():
 	def __init__(self, num_players, names=[]):
@@ -20,7 +20,9 @@ class Blackjack():
 	def start_round(self):
 		# print hands
 		for player in self.players:
+			next_player(player)
 			player.print_hand()
+			press_return()
 
 		# move to next turn
 		self.next_turn()
@@ -28,6 +30,9 @@ class Blackjack():
 	def next_turn(self):
 		for player in self.players:
 			if player.cont and len(self.unbroken()) > 1:
+				next_player(player)
+				player.print_hand()
+
 				if match_yes("Would you like to draw another card, {}?".format(player.name)):
 					player.draw()
 					player.print_hand()
@@ -36,7 +41,10 @@ class Blackjack():
 						player.cont = False
 				else:
 					player.cont = False
-		if any(map(lambda player: player.cont, self.players)):
+
+				press_return()
+
+		if any(map(lambda player: player.cont, self.players)) and len(self.unbroken()) > 1:
 			self.next_turn()
 		else:
 			self.end()

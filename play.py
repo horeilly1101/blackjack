@@ -1,6 +1,5 @@
-from input_handling import match_yes
+from input_handling import match_yes, get_num_players
 from blackjack import Blackjack
-from input_handling import get_num_players
 
 if __name__ == "__main__":
 	print("\nWelcome to blackjack!")

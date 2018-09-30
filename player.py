@@ -19,6 +19,7 @@ class Player():
 			return min_sum
 
 	def print_hand(self):
-		print("{}'s' Hand:".format(self.name))
+		print("{}'s Hand:".format(self.name))
 		for card in self.hand:
 			print(" ", card)
+		print("")
