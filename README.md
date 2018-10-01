@@ -1,5 +1,5 @@
 # blackjack
-Rules: Get as close to 21 as you can without going over. The player without the highest number less than 21 wins.
+Rules: Get as close to 21 as you can without going over. The player without the highest number less than 22 wins.
 
 ## My implementation
 - Allows 2 - 4 players
