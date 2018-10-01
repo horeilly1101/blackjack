@@ -1,4 +1,5 @@
 '''definition of Card class'''
+
 class Card():
 	'''class that keeps track of individual 'cards'
 
