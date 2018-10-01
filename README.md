@@ -9,4 +9,4 @@ Rules: Get as close to 21 as you can without going over. The player without the 
 
 ## Design Designs
 - I didn't use any "crazy" libraries, so the entire game can be run as long as you have the latest version of Python 3 installed.
-- **functools** allows me to use the "reduce" function, which greatly simplifies the code.
+- *functools* allows me to use the "reduce" function, which greatly simplifies the code.
