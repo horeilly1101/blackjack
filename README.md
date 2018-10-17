@@ -1,6 +1,8 @@
 # blackjack
 Rules: Get as close to 21 as you can without going over. The player without the highest number less than 22 wins.
 
+![User Interface](blackjack_ui.png)
+
 ## My implementation
 - Allows 2 - 4 players
 - Is entirely console-based
