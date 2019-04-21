@@ -1,6 +1,6 @@
 '''definition of Deck class'''
 
-from card import Card
+from .card import Card
 from random import shuffle
 
 class Deck():

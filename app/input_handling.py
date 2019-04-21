@@ -15,7 +15,7 @@ functions:
 '''
 
 import re
-from player import Player
+from .player import Player
 import time
 
 def match_yes(input_string):

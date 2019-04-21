@@ -1,6 +1,6 @@
 '''defines player class'''
 
-from deck import Deck
+from .deck import Deck
 from functools import reduce
 
 class Player():

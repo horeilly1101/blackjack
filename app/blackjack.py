@@ -1,8 +1,8 @@
 '''defines the Blackjack class'''
 
-from player import Player
-from deck import Deck
-from input_handling import match_yes, next_player, press_return
+from .player import Player
+from .deck import Deck
+from .input_handling import match_yes, next_player, press_return
 
 class Blackjack():
 	'''the class that keeps track of gameplay

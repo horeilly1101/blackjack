@@ -1,7 +1,7 @@
 '''runs the blackjack game!'''
 
-from input_handling import match_yes, get_num_players
-from blackjack import Blackjack
+from app.input_handling import match_yes, get_num_players
+from app.blackjack import Blackjack
 
 if __name__ == "__main__":
 	print("\nWelcome to blackjack!")
