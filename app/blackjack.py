@@ -71,7 +71,8 @@ class Blackjack():
 				player.print_hand()
 
 				# queries the player
-				if match_yes("Would you like to draw another card, {}?".format(player.name)):
+				if match_yes("Would you like to draw another card, {}?"
+					.format(player.name)):
 					player.draw()
 					player.print_hand()
 
@@ -85,7 +86,7 @@ class Blackjack():
 				press_return()
 
 		# checks if another turn is necessary
-		if any(map(lambda player: player.cont, self.players)) and len(self.unbroken()) > 1:
+		if (any(map(lambda player: player.cont, self.players)) and len(self.unbroken()) > 1:
 			self.next_turn()
 
 		# ends game
@@ -97,9 +98,12 @@ class Blackjack():
 		# find the winner
 		winner = max(self.unbroken(), key = lambda player: player.sum_hand())
 		# print congratulations
-		print("Congratulations, {}! With a score of {}, you've won!".format(winner.name, winner.sum_hand()))
+		print("Congratulations, {}! With a score of {}, you've won!"
+			.format(winner.name, winner.sum_hand()))
 
 		# queries the user if they would like to play again
 		if match_yes("Would you like to play again?"):
-			game = Blackjack(len(self.players), names = list(map(lambda player: player.name, self.players)))
+			game = Blackjack(
+				len(self.players), 
+				names = list(map(lambda player: player.name, self.players)))
 			game.start_round()
