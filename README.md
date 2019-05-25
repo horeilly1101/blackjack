@@ -1,7 +1,7 @@
 # blackjack
 Rules: Get as close to 21 as you can without going over. The player with the highest number less than 22 wins.
 
-<img src="docs/pictures/blackjack_ui.png" alt="user interface" width="600"/>
+<img src="docs/pictures/blackjack_ui.png" alt="user interface" width="400"/>
 
 ## My implementation
 - Allows 2 - 4 players
