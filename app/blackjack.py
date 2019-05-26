@@ -86,7 +86,7 @@ class Blackjack():
 				press_return()
 
 		# checks if another turn is necessary
-		if (any(map(lambda player: player.cont, self.players)) and len(self.unbroken()) > 1:
+		if (any(map(lambda player: player.cont, self.players)) and len(self.unbroken()) > 1):
 			self.next_turn()
 
 		# ends game
